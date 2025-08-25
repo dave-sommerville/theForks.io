@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dave Sommerville">
+  <meta name="description" content=""> <!-- Consider SEO!!-->
+  <meta name="theme-color" content="#ffffff">
+  <title>Blackjack</title>
+  <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./src/css/reset.css" media="all">
+  <link rel="stylesheet" href="./src/css/style.css" media="all">
+  <script src="./src/js/app.js" type="module"></script>
+</head>
+<body>
+  <main class="f-col no-select container">
+    <div class="value-image-wrapper f-col">
+      <i class="fa-solid fa-circle-info dealer-btn"></i>
+      <div class="dealer-info">
+        <p class="underline">Dealer Cards</p>
+        <ul class="dealer-display">
+        </ul>
+      </div>
+      <div class="dealer-image-wrapper"></div>
+      <p class="dealer-value-display"></p>
+    </div>
+    <p class="final-result-display"></p>
+    <div class="value-image-wrapper f-col">
+      <i class="fa-solid fa-circle-info player-btn"></i>
+      <div class="player-info">
+        <p class="underline">Player Cards</p>
+        <ul class="player-display">
+        </ul>
+      </div>
+      <div class="player-image-wrapper"></div>
+      <p class="player-hand-value">
+        Total:
+        <span class="player-value-display"></span>
+      </p>
+    </div>
+    <section class="deal-bet flex">
+      <button type="button" class="btn hidden start-btn">
+          DEAL
+      </button>
+      <button type="button" class="btn restart-btn hidden">
+        RESET
+      </button>
+      <button type="button" class="btn hit-btn hidden">
+          HIT
+      </button>
+      <button type="button" class="btn double-btn hidden">
+          x2
+      </button>
+      <button type="button" class="btn hold-btn hidden">
+          HOLD
+      </button>
+    </section>
+    <section class="bank-wrapper f-col">
+      <div class="side-bank-display money-display"></div>
+      <div class="side-pot bet-display"></div>
+    </section>
+    <section class="no-select bet-banking-area">
+      <h1>BLACKJACK</h1>
+      <div class="bank-area f-col">
+        <figure class="all-in">
+        <img src="./src/img/bomb.png">
+        <figcaption>ALL IN</figcaption>
+        </figure>
+        <div class="ad-btn hidden flex">
+          <i class="fa-solid fa-rectangle-ad"></i>
+        </div>
+        <div class="money-sack player-bank f-col">
+        </div>
+        <p>
+          BET: 
+          <span class="pot"></span>
+        </p>
+      </div>
+      <div class="bet-area flex">
+        <div class="button bet10 flex">
+          <p>10</p>
+        </div>
+        <div class="button bet50 flex">
+          <p>50</p>
+        </div>
+        <div class="button bet100 flex">
+          <p>100</p>
+        </div>
+      </div>
+      <div class="decrease-bet-area flex">
+        <div class="decrease down10">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="decrease down50">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="decrease down100">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+      <div class="flex center">
+        <button class="btn place-bet">DEAL</button>
+        <!-- <p class="funds-display"></p> -->
+      </div>
+    </section>
+    <section class="ad-display">
+      <div class="progress-bar"></div>
+      <p class="timer-text">5</p>
+      <div class="ad-image-wrapper">
+        <h2>Check out my other games!</h2>
+        <a href="https://dave-sommerville.github.io/code-breaker/" target="_blank">
+          <img src="./src/img/code-breaker.jpg">
+        </a>
+        <a href="https://dave-sommerville.github.io/script-scavengers/" target="_blank">
+          <img src="./src/img/script-scavengers.jpg">
+        </a>
+      </div>
+      <a href="https://ds-code.ca/">
+        <img class="invert" src="./src/img/ds-code-logo.png">
+      </a>
+    </section>
+    <section>
+			<audio class="click-fx">
+				<source src="./src/media/click-fx.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>		
+			<audio class="shuffle-fx">
+				<source src="./src/media/shuffle-fx.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>		
+      <audio class="coin-fx">
+				<source src="./src/media/coin-fx.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>
+      <audio class="winning-fx">
+				<source src="./src/media/winning-fx.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>
+      <audio class="all-in-fx">
+				<source src="./src/media/all-in-fx.mp3" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>
+		</section>
+  </main>
+  <footer>
+    <a href="https://ds-code.ca/">
+      <img src="./src/img/ds-code-logo.png">
+    </a>
+  </footer>
+</body>
+</html>
