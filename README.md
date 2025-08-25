@@ -1,38 +1,105 @@
 # theForks.io
-## Winnipeg Open Source Showcase
 
-Welcome! This is a **community-driven repository** where Winnipeg (and Manitoba) developers can share small open-source programs, scripts, and projects.
+#### Winnipeg Open Source Showcase
 
-Whether you’ve built a handy CLI tool, a small web app, or just a fun experiment, we want to showcase it here! 
-Let's see how creative this can get!
+Hello Winnipeg!
+Welcome to TheForks.io
 
----
+Winnipeg is home to an robust tech scene that is beginning to evolve in new and exciting ways. The Forks historical site embodies a spirit of teamwork and communication. TheForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects.
 
-## 📜 How to Contribute
+Whether you’ve built a handy CLI tool, a small web app, or just a fun experiment, we want to showcase it here!
+
+#### Specifics
+
+My name is [Dave Sommerville](https://ds-code.ca) and I'm a recent graduate from [MITT](https://mitt.ca). I'm currently the sole moderator for this repo, but I want to change that. Once I get things established, I will share permissions with a select group of people to ensure integrity and longevity for the project. In the meantime, I will handle all contributions to the best of my ability. 
+
+
+
+
+
+
+
+###### This space is for programmers of all experience levels.
+
+
+
+Whether you're new to git or a senior developer, if you have one or two open-source projects that you are proud of and want to share with an interested and local audience, you are in the right place. For the foreseeable future, contributors will be limited to two projects to share. You are able to replace, update, or remove those programs as you wish of course. Please note the Code of Conduct and the Contribution guide below 
+
+###### **Why Contribute?**
+
+By adding your project, you get:
+
+⦁	Visibility — Your work is showcased alongside other local devs.
+
+⦁	Portfolio Material — Link to your project in job applications or resumes.
+
+⦁	Networking — Connect with other Winnipeg developers.
+
+⦁	Git \& Open Source Practice — Learn pull requests, forks, branching, and reviewing code.
+
+⦁	Community Impact — Inspire others to learn and build.
+
+
+
+**Please note:** This is NOT a space for selling products or yourself. Programs offered here are meant for community engagement. Let your work speak for itself. 
+
+
+
+###### **Please share with the developers in your circle**
+
+We can turn this into something awesome, but we can only do that if we share it with others. If you have any programmers, developers, web/app designers, or general tech enthusiasts, please send this repo their way. 
+
+
+
+#### How to Contribute
 
 1. **Fork** this repository.
 2. Create a **new folder** in `/winnipeg-programs-directory` and name it after your project.
 3. Add your source code and a `README.md` in your project folder that includes:
-   - Project name
-   - Short description
-   - How to run it
-   - Author info (name, link, etc.)
+
+   * Project name
+   * Short description
+   * How to run it
+   * Author info (name, link, etc.)
+
 4. Commit your changes to your fork.
 5. **Open a Pull Request** to the `main` branch of this repo.
+6. 
 
 Your project will be reviewed and merged for everyone to see!
 
-### Notes
-- Please keep your code clean and runnable.
-- Include instructions so others can try it.
-- MIT license is the default.
-### Code of Conduct
+**Notes:**
 
-We are committed to a welcoming and inclusive environment for everyone.
+* Please keep your code clean and runnable.
+* Include instructions so others can try it.
+* MIT license is the default.
 
-- Be respectful.
-- Assume good intentions.
-- No harassment or discrimination of any kind.
-- No harmful programs or scripts of any kind
 
-Violations may result in removal of contributions or removal from contributors list.
+
+
+
+#### Code of Conduct
+
+We are committed to fostering a welcoming, inclusive, and respectful environment for everyone.
+
+* Treat others with respect.
+* Assume good intentions and engage constructively.
+* Harassment, discrimination, or abusive behavior will not be tolerated.
+* Do not submit harmful, malicious, or destructive programs/scripts.
+* Do not post resumes, job applications, or recruitment solicitations.
+* Do not promote paywalled or commercial content.
+
+
+
+Violations may result in removal of contributions or removal from the contributors list. Submissions that are intentionally malicious or destructive may be referred to law enforcement.
+
+
+
+
+
+
+
+Add links to discord, DS Code, something else
+
+Later try the contributors text
+
