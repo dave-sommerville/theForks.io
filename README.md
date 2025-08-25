@@ -5,7 +5,7 @@
 Hello Winnipeg!
 Welcome to TheForks.io
 
-Winnipeg is home to an robust tech scene that is beginning to evolve in new and exciting ways. The Forks historical site embodies a spirit of teamwork and communication. TheForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects.
+Winnipeg is home to a robust tech scene that is beginning to evolve in new and exciting ways. The Forks historical site embodies a spirit of teamwork and communication. TheForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects.
 
 Whether you’ve built a handy CLI tool, a small web app, or just a fun experiment, we want to showcase it here!
 
@@ -23,7 +23,7 @@ My name is [Dave Sommerville](https://ds-code.ca) and I'm a recent graduate from
 
 
 
-Whether you're new to git or a senior developer, if you have one or two open-source projects that you are proud of and want to share with an interested and local audience, you are in the right place. For the foreseeable future, contributors will be limited to two projects to share. You are able to replace, update, or remove those programs as you wish of course. Please note the Code of Conduct and the Contribution guide below 
+Whether you’re new to Git or a senior developer, if you have one or two open source projects you’re proud of and want to share with a local audience, you’re in the right place. For the foreseeable future, contributors will be limited to two projects to share. You are able to replace, update, or remove those programs as you wish of course. Please note the Code of Conduct and the Contribution guide below 
 
 ###### **Why Contribute?**
 
@@ -47,7 +47,7 @@ By adding your project, you get:
 
 ###### **Please share with the developers in your circle**
 
-We can turn this into something awesome, but we can only do that if we share it with others. If you have any programmers, developers, web/app designers, or general tech enthusiasts, please send this repo their way. 
+We can turn this into something awesome, but we can only do that if we share it with others. If you have any programmers, developers, web/app designers, or general tech enthusiasts in your circles, please send this repo their way. 
 
 
 
@@ -64,7 +64,6 @@ We can turn this into something awesome, but we can only do that if we share it 
 
 4. Commit your changes to your fork.
 5. **Open a Pull Request** to the `main` branch of this repo.
-6. 
 
 Your project will be reviewed and merged for everyone to see!
 
@@ -93,13 +92,4 @@ We are committed to fostering a welcoming, inclusive, and respectful environment
 
 Violations may result in removal of contributions or removal from the contributors list. Submissions that are intentionally malicious or destructive may be referred to law enforcement.
 
-
-
-
-
-
-
-Add links to discord, DS Code, something else
-
-Later try the contributors text
 
