@@ -1,6 +1,7 @@
+![theForks.io logo](media/theforks-io-logo.jpg)
 # theForks.io
 
-#### Winnipeg Open Source Showcase
+## Winnipeg Open Source Showcase
 
 Hello Winnipeg!
 Welcome to TheForks.io
@@ -9,7 +10,7 @@ Winnipeg is home to a robust tech scene that is beginning to evolve in new and e
 
 Whether you’ve built a handy CLI tool, a small web app, or just a fun experiment, we want to showcase it here!
 
-#### Specifics
+## Specifics
 
 My name is [Dave Sommerville](https://ds-code.ca) and I'm a recent graduate from [MITT](https://mitt.ca). I'm currently the sole moderator for this repo, but I want to change that. Once I get things established, I will share permissions with a select group of people to ensure integrity and longevity for the project. In the meantime, I will handle all contributions to the best of my ability. 
 
@@ -19,13 +20,13 @@ My name is [Dave Sommerville](https://ds-code.ca) and I'm a recent graduate from
 
 
 
-###### This space is for programmers of all experience levels.
+#### This space is for programmers of all experience levels.
 
 
 
-Whether you’re new to Git or a senior developer, if you have one or two open source projects you’re proud of and want to share with a local audience, you’re in the right place. For the foreseeable future, contributors will be limited to two projects to share. You are able to replace, update, or remove those programs as you wish of course. Please note the Code of Conduct and the Contribution guide below 
+Whether you’re new to Git or a senior developer, if you have one or two **original** open source projects you’re proud of and want to share with a local audience, you’re in the right place. For the foreseeable future, contributors will be limited to two projects to share. You are able to replace, update, or remove those programs as you wish of course. Projects that are the result of school assignments should not be submitted, as they aren't technically original and the schools will likely want to reuse the project ideas. Please note the Code of Conduct and the Contribution guide below 
 
-###### **Why Contribute?**
+#### **Why Contribute?**
 
 By adding your project, you get:
 
@@ -45,13 +46,13 @@ By adding your project, you get:
 
 
 
-###### **Please share with the developers in your circle**
+#### **Please share with the developers in your circle**
 
 We can turn this into something awesome, but we can only do that if we share it with others. If you have any programmers, developers, web/app designers, or general tech enthusiasts in your circles, please send this repo their way. 
 
 
 
-#### How to Contribute
+## How to Contribute
 
 1. **Fork** this repository.
 2. Create a **new folder** in `/winnipeg-programs-directory` and name it after your project.
@@ -68,22 +69,20 @@ We can turn this into something awesome, but we can only do that if we share it 
 Your project will be reviewed and merged for everyone to see!
 
 **Notes:**
-
+* This is all open source so others will be free to see and use your code if you add it. 
 * Please keep your code clean and runnable.
 * Include instructions so others can try it.
 * MIT license is the default.
 
 
-
-
-
-#### Code of Conduct
+## Code of Conduct
 
 We are committed to fostering a welcoming, inclusive, and respectful environment for everyone.
 
 * Treat others with respect.
 * Assume good intentions and engage constructively.
 * Harassment, discrimination, or abusive behavior will not be tolerated.
+* Only post original programs, meaning no work or assignment projects should be included
 * Do not submit harmful, malicious, or destructive programs/scripts.
 * Do not post resumes, job applications, or recruitment solicitations.
 * Do not promote paywalled or commercial content.
