@@ -48,7 +48,7 @@ By adding your project, you get:
 
 #### **Please share with the developers in your circle**
 
-We can turn this into something awesome, but we can only do that if we share it with others. If you have any programmers, developers, web/app designers, or general tech enthusiasts in your circles, please send this repo their way. 
+We can turn this into something awesome, but we can only do that if we share it with others. If you have any Manitoban programmers, developers, web/app designers, or general tech enthusiasts in your circles, please send this repo their way. 
 
 
 
@@ -69,10 +69,10 @@ We can turn this into something awesome, but we can only do that if we share it 
 Your project will be reviewed and merged for everyone to see!
 
 **Notes:**
-* This is all open source so others will be free to see and use your code if you add it. 
+* This is all open source so others will be free to see and use your code if you add it.
+* MIT license is the default.
 * Please keep your code clean and runnable.
 * Include instructions so others can try it.
-* MIT license is the default.
 
 
 ## Code of Conduct
