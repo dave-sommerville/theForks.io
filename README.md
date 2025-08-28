@@ -1,4 +1,4 @@
-![theForks.io logo](media/theforks-io-logo.jpg)
+![theForks.io logo](src/media/theforks-io-logo.jpg)
 # theForks.io
 
 ## Winnipeg Open Source Showcase
