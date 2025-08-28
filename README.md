@@ -48,7 +48,7 @@ By adding your project, you get:
 
 #### **Please share with the developers in your circle**
 
-We can turn this into something awesome, but we can only do that if we share it with others. If you have any programmers, developers, web/app designers, or general tech enthusiasts in your circles, please send this repo their way. 
+We can turn this into something awesome, but we can only do that if we share it with others. If you have any Manitoban programmers, developers, web/app designers, or general tech enthusiasts in your circles, please send this repo their way. 
 
 
 
