@@ -1,7 +1,7 @@
 
 # D&D Spell Cards
 This was a side project that I had one of my friends reach out for me to do. 
-Using the D&D 5e API (https://www.dnd5eapi.co/), this project aims to assist players keep their plethora of spells organized and in one spot. As one of my first API projects, it may not be the cleanest, but it sure is functional
+Using the [D&D 5e API](https://www.dnd5eapi.co/), this project aims to assist players keep their plethora of spells organized and in one spot. As one of my first API projects, it may not be the cleanest, but it sure is functional
 and allows the user to sort and organize D&D 5e spells, and keep the ones that the user chooses in a collection.
 
 
