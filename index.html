@@ -8,10 +8,10 @@
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="DS Code | Dave Sommerville" />
   <meta property="og:description" content="Dave Sommerville | Fullstack Web Developer Actively seeking full-time opportunities in Winnipeg, Canada - building fast, accessible, and modern websites. Focused on creating scalable, maintainable, and versatile code." />
-  <meta property="og:image" content="https://ds-code.ca/image/site-preview.png" />
-  <meta property="og:url" content="https://ds-code.ca" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="https://theforks.io" />
   <meta property="og:type" content="website" />
-    <title></title>
+    <title>theForks.io | Public Winnipeg GitHub Repository for Programmers of All Levels</title>
     <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
     
     <!-- External stylesheets -->
@@ -22,12 +22,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./src/css/style.css" media="all">
     <link rel="stylesheet" href="./src/css/reset.css" media="all">
+    <script src="./src/js/app.js" defer></script>
 </head>
 <body>
-    <main>
+    <main class="container">
       <img alt="theForks.io" src="./src/media/theforks-io-logo.jpg" class="logo">
       <h1>theForks.io</h1>
       <h2>Winnipeg's Open-Source Repository</h2>
+      <iframe>Embed video</iframe>
       <p>
         Hello Winnipeg! Welcome to TheForks.io
       </p>
@@ -37,24 +39,78 @@
       <p class="bold">
         This space is for programmers of all experience levels.
       </p>
-      <p class="link">
-        <a href="https://github.com/dave-sommerville/theForks.io" target="_blank">Visit the Repository here</a>
-      </p>
-      <p class="link">
-        <a href="./How_to_Contribute.md" target="_blank">How to Contribute</a>
-      </p>
-      <p class="link">
-        <a href="./Code_of_Conduct.md" target="_blank">Code of Conduct</a>
-      </p>
       <p>
         This is a ground level project. Where this space goes and how it evolves will be up to the community. Have any ideas on how to use this space? Want to do more than just contribute? 
       </p>
+      <h3>Why Contribute?</h3>
+      <ul>
+        <li>Visibility</li>
+        <li>Community Participation</li>
+        <li>Networking</li>
+      </ul>
       <p class="link">
-        <a href="mailto:dave.r.sommerville@outlook.com">Email me at dave.r.sommerville@outlook.com</a>
+        <a href="https://github.com/dave-sommerville/theForks.io" target="_blank">Visit the Repository here</a>
       </p>
-      <p class="link">
-        <a href="https://ds-code.ca" target="_blank">Or visit my website https:ds-code.ca</a>
-      </p>
+      <section class="btn-container">
+        <div class="btn why-contribute-btn"></div>
+        <div class="btn contributors-btn"></div>
+        <div class="btn projects-btn"></div>
+        <div class="btn workshop-btn">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <p>
+            Workshop
+          </p>
+        </div>
+        <div class="btn documention-btn">
+          <i class="fa-solid fa-folder-open"></i>
+          <p>
+            Documentation
+          </p>
+        </div>
+      </section>
+      <dialog class="contributors">
+        <div class="close-btn">X</div>
+
+      </dialog>
+      <dialog class="projects">
+        <div class="close-btn">X</div>
+
+      </dialog>
+      <dialog class="workshop">
+        <div class="close-btn">X</div>
+
+      </dialog>
+      <dialog class="documentation">
+        <div class="close-btn">X</div>
+        <div class="btn-container">
+          <a href="./README.md" class="btn" target="_blank">
+            <i class="fa-solid fa-book"></i>
+            <p>
+              README
+            </p>  
+          </a>
+          <a href="./How_to_Contribute.md" class="btn" target="_blank">
+            <i class="fa-solid fa-book"></i>
+            <p>
+              How to Contribute
+            </p>
+          </a>
+          <a href="./Code_of_Conduct.md" class="btn" target="_blank">
+            <i class="fa-solid fa-book"></i>
+            <p>
+              Code of Conduct
+            </p>
+          </a>
+          <a href="./README_Template.md" class="btn" target="_blank">
+            <i class="fa-solid fa-book"></i>
+            <p>
+
+              README template
+            </p>
+          </a>
+        </div>
+      </dialog>
+
     </main>
 </body>
 </html>

@@ -9,6 +9,7 @@ main{
   justify-content: center;
   align-items: center;
   font-family: "IBM Plex Mono","Space Mono", monospace;
+  padding-bottom: 100px;
 }
 h1 {
   display: none;
@@ -27,6 +28,17 @@ a {
 .bold {
   font-weight: 600;
 }
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
+
+.list-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
 .link {
   margin: 10px 0;
   transition: all 0.3s ease-in-out;
@@ -34,4 +46,79 @@ a {
 .link:hover {
   background-color: #012;
   color: #fff;
+}
+.card-title {
+  height: 80px;
+  line-height: 80px;
+  font-size: 2.2rem;
+  width: 100%;
+  text-align: center;
+}
+.close-btn {
+  height: 40px;
+  width: 40px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #ff1346;
+  font-size: 1.6rem;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.btn {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn i {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+.btn p {
+  font-size: 0.7rem;
+  width: 100px;
+}
+
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60svw;
+  min-height: 500px;
+  position: fixed;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
