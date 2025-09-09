@@ -24,12 +24,13 @@ const contributors = select('.contributors');
 const projects = select('.projects');
 const workshop = select('.workshop');
 const documention = select('.documentation');
+const tutorial = select('.tutorial');
 
 const contributorsButton = select('.contributors-btn');
 const projectsButton = select('.projects-btn');
 const workshopButton = select('.workshop-btn');
 const documentionButton = select('.documention-btn');
-
+const tutorialButton = select('.tutorial-btn');
 
 const exitButtons = selectAll('.close-btn');
 
@@ -46,6 +47,9 @@ listen("click", workshopButton, ()=> {
 listen("click", documentionButton, ()=> {
   documention.showModal();
 });
+listen("click", tutorialButton, ()=>{
+  tutorial.showModal();
+});
 
 exitButtons.forEach(btn => {
   listen("click", btn, ()=> {
@@ -53,5 +57,6 @@ exitButtons.forEach(btn => {
     projects.close();
     workshop.close();
     documention.close();
+    tutorial.close();
   });
 });

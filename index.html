@@ -17,53 +17,73 @@
     <!-- External stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kode+Mono:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-      
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kode+Mono:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./src/css/style.css" media="all">
     <link rel="stylesheet" href="./src/css/reset.css" media="all">
     <script src="./src/js/app.js" defer></script>
 </head>
 <body>
-    <main class="container">
-      <img alt="theForks.io" src="./src/media/theforks-io-logo.jpg" class="logo">
-      <h1>theForks.io</h1>
-      <h2>Winnipeg's Open-Source Repository</h2>
-      <article>
+    <main>
+      <section class="container f-col">
+        <img alt="theForks.io" src="./src/media/theforks-io-logo.jpg" class="logo">
+        <h1>theForks.io</h1>
+        <h2>Winnipeg's Open-Source Repository</h2>
+      </section>
+      <article class="container">
 
         <div class="video-container">
           <iframe 
-          src="https://www.youtube.com/embed/Clh2jm96G-I" 
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
+            src="https://www.youtube.com/embed/Clh2jm96G-I"
+            class="promo-iframe"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
         </iframe>
       </div>  
-      <div class="maxW-400px">
+      <div class="display-text">
 
         <p>
-          Hello Winnipeg! Welcome to TheForks.io
+          Hello Winnipeg! 
         </p>
         <p>
-          Winnipeg is home to a robust tech scene that is beginning to evolve in new and exciting ways. The Forks historical site embodies a spirit of teamwork and communication. TheForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects. Whether you've built a handy CLI tool, a small web app, or just a fun experiment, we want to showcase it here!
+          Welcome to TheForks.io
+        </p>
+        <p>
+          Winnipeg is home to a robust tech scene that is beginning to evolve in new and exciting ways.
         </p>
         <p class="bold">
-          This space is for programmers of all experience levels.
-        </p>
-        <p>
-          This is a ground level project. Where this space goes and how it evolves will be up to the community. Have any ideas on how to use this space? Want to do more than just contribute? 
+          This space is for programmers of all experience levels to share and collaborate!
         </p>
       </div>
     </article>
-      <h3>Why Contribute?</h3>
-      <ul>
-        <li>Visibility</li>
-        <li>Community Participation</li>
-        <li>Networking</li>
-      </ul>
-      <p class="link">
-        <a href="https://github.com/dave-sommerville/theForks.io" target="_blank">Visit the Repository here</a>
-      </p>
+    <article  class="container">
+      <div class="display-text">
+        <p>
+          The Forks historical site embodies a spirit of teamwork and communication.
+        </p>
+        <p> 
+          TheForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects.           
+        </p>
+      </div>
+      <img src="./src/media/pete-mcbride-4ma1B4OdCpM-unsplash.jpg" class="outdoor-pic">
+    </article>
+    <section class="banner">
+      <a href="https://github.com/dave-sommerville/theForks.io" target="_blank">
+        <p>
+          Whether you've built a handy CLI tool, a small web app, or just a fun experiment, we want to showcase it here!
+        </p>
+      </a>
+    </section>
+    <article class="container">
+      <div class="display-text">
+        <h3>Why Contribute?</h3>
+        <ul>
+          <li>Visibility</li>
+          <li>Community Participation</li>
+          <li>Networking</li>
+        </ul>
+      </div>
       <section class="btn-container">
         <div class="btn contributors-btn">
           <i class="fa-solid fa-users-rays"></i>
@@ -90,34 +110,59 @@
           </p>
         </div>
       </section>
+    </article>
+    <section class="f-col">
+      <p class="link">
+        <a href="https://github.com/dave-sommerville/theForks.io" target="_blank">Visit the Repository here</a>
+      </p>
+      <p class="mb-50px">
+        This is a ground level project. Where this space goes and how it evolves will be up to the community. Have any ideas on how to use this space? Want to do more than just contribute? 
+      </p>
+      <a href="mailto:dave.r.sommerville@outlook.com" class="link">Send me a message</a>
+      <p>Or visit</p>
+      <a href="https://ds-code.ca" target="_blank" class="ds-code">
+      </a>
+    </section>
       <dialog class="contributors">
         <div class="close-btn">X</div>
+        <h4>Contributors</h4>
         <div class="list-container">
           <ul>
+            <li class="bold">Name</li>
             <li>Dave Sommerville</li>
           </ul>
           <ul>
-            <li>DS Code</li>
+            <li class="bold">Website</li>
+            <li>
+              <a href="https://ds-code.ca" target="_blank">DS Code</a>
+            </li>
           </ul>
         </div>
       </dialog>
       <dialog class="projects">
         <div class="close-btn">X</div>
+        <h4>Projects</h4>
         <div class="list-container">
           <ul>
-            <li>Dave Sommerville</li>
+            <li class="bold">Project Name</li>
+            <li>Blackjack</li>
           </ul>
           <ul>
-            <li>DS Code</li>
+             <li class="bold">Links</li>
+            <li>
+              <a href="https://dave-sommerville.github.io/blackjack/" target="_blank">Website</a> | <a href="https://github.com/dave-sommerville/blackjack" target="_blank">Repository</a>
+            </li>
           </ul>
         </div>
       </dialog>
       <dialog class="workshop">
         <div class="close-btn">X</div>
+        <H4>Workshop</H4>
         <p>Coming Soon</p>
       </dialog>
       <dialog class="documentation">
         <div class="close-btn">X</div>
+        <h4>Documentation</h4>
         <div class="btn-container">
           <a href="./README.md" class="btn" target="_blank">
             <i class="fa-solid fa-book"></i>
@@ -144,13 +189,51 @@
               README template
             </p>
           </a>
-          <a href="" class="btn" target="_blank">
+          <div class="btn tutorial-btn">
             <i class="fa-brands fa-square-youtube"></i>
             <p>Tutorial</p>
-          </a>
+          </div>
         </div>
       </dialog>
-
+      <dialog class="tutorial">
+        <div class="close-btn">X</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ygqx50-JHEE?si=X_7Yo2Jo2cUm9sGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </dialog>
     </main>
+    <footer class="container">
+      <ul class="flex">
+        <li>
+          <a 
+            href="https://github.com/dave-sommerville/theForks.io" 
+            target="_blank"
+          >
+            Repository
+          </a>
+        </li>
+        <li>
+          <a 
+            href="https://ds-code.ca" 
+            target="_blank"
+          >
+            DS Code
+          </a>
+        </li>
+        <li>
+          Photos: 
+          <a 
+            href="https://unsplash.com/photos/a-very-tall-bridge-with-a-very-tall-building-in-the-background-1ci4qIfZ1Yo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+            target="_blank"
+          >
+            Bridge -Amanpreet Deol
+          </a> 
+          <a 
+            href="https://unsplash.com/photos/brown-and-gray-building-near-trees-during-daytime-4ma1B4OdCpM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+            target="_blank"
+          >
+            Winter: Pete McBride
+          </a>
+        </li>
+      </ul>
+    </footer>
 </body>
 </html>
