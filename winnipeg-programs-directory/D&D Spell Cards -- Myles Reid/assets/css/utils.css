@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+.container {  
+  width: min(100% - 50px, 1280px);
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--app-font-color);
+}
+
+/*--------------------------------*/
+/* Position                       */
+/*--------------------------------*/
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-even {
+  justify-content: space-evenly;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-column {
+  flex-direction: column;
+  }
+
+.flex-backwards {
+  flex-direction: row-reverse;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.justify-left {
+  justify-self: left;
+}
+
+.justify-right {
+  justify-self: right;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+/*--------------------------------*/
+/* text                           */
+/*--------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+/*--------------------------------*/
+/* Visibility                     */
+/*--------------------------------*/
+
+.none {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*--------------------------------*/
+/* Transitions                    */
+/*--------------------------------*/
+
+.easeinout {
+  transition: all 0.25s ease-in-out;
+}

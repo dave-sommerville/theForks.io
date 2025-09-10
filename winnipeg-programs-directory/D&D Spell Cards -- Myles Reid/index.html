@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta name="author" content="Myles Reid">
+    <meta name="description" content="Page elements">
+    <meta name="keywords" content="html, CSS, web, seo, web development">
+    <title>D&D Spell Cards</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+    <link rel="stylesheet" media="all" href="./assets/css/style.css">
+    <link rel="stylesheet" media="all" href="./assets/css/loader.css">
+    <script src="./assets/js/app.js" type="module"></script>
+  </head>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <body>
+    <main class="container">
+      <h2>Spell Finder</h2>
+      <div class="main-wrapper">
+        <div class="spell-list-wrapper">
+          <div class="filter-wrapper">
+            <select name="level" id="level">
+              <option selected disabled hidden>--Choose Spell Level--</option>
+              <option value="all">All Spells</option>
+              <option value="cantrip">Cantrip</option>
+              <option value="1">1st Level</option>
+              <option value="2">2nd Level</option>
+              <option value="3">3rd Level</option>
+              <option value="4">4th Level</option>
+              <option value="5">5th Level</option>
+              <option value="6">6th Level</option>
+              <option value="7">7th Level</option>
+              <option value="8">8th Level</option>
+              <option value="9">9th Level</option>
+            </select>
+          </div>
+          <section class="spell-list">
+            <ul id="spell-list">
+            </ul>
+          </section>
+          <button class="add-spell button">Add Spell To Spellbook
+            <span class="add-spell-message"></span>
+          </button>
+        </div>
+        <section class="spell-card">
+          <div class="card hidden">
+            <div class="ritual-tag hidden"><i class="fa-regular fa-registered"></i></div>
+            <h3 class="spell-name"></h3>
+            <p class="spell-level"></p>
+            <div class="quick-info">
+              <div class="row">
+                <div class="cast info-box">
+                  <h5>Casting Time</h5>
+                  <p class="cast-time"></p>
+                </div>
+                <div class="range info-box">
+                  <h5>Range / Area</h5>
+                  <div class="range-area">
+                    <p class="sp-range"></p>
+                    <p class="sp-area"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="components info-box">
+                  <h5>Components</h5>
+                  <p class="sp-components"></p>
+                </div>
+                <div class="duration info-box">
+                  <h5>Duration</h5>
+                  <p class="sp-duration"></p>
+                </div>
+              </div>
+            </div>
+            <div class="info-text">
+              <div class="description">
+                <p></p>
+              </div>
+              <div>
+                <p class="higher-levels"></p>
+              </div>
+            </div>
+            <div class="extras row">
+              <div class="school info-box">
+                <h5>School Of Magic</h5>
+                <p class="magic-school"></p>
+              </div>
+              <div class="classes info-box">
+                <h5>Classes</h5>
+                <p class="sp-classes"></p>
+            </div>
+            </div>
+          </div>
+        </section>
+        <a href="./spellboox.html" class="spellbook-btn-wrapper">
+          <button class="spellbook">SpellBook</button>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
