@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+:root {
+  --app-color-dark-bg: #1a1d28;
+  --app-color-light-bg: #f9f9f9;
+
+  --app-red-background: #ff3c57;
+  --app-green-background: #33ab4e;
+  --app-blue-background: #3c57ff;
+  --app-purple-background: #833cff;
+  --app-orange-background: #ff833c;
+
+
+  --app-font-color: #242424;
+  --app-color-primary: #900;
+  --app-color-secondary: #c00000;
+  --app-color-tertiary: #994d00;
+  
+  --app-box-radius: 6px;
+  --app-box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
+
+  --pseudo-display: none;
+}

@@ -1,0 +1,218 @@
+@charset "utf-8";
+@import url(./utils.css);
+@import url(./root.css);
+html {
+  font-family: 'Nunito Sans', 'Fira Sans', Arial, sans-serif;
+  color: white;
+}
+/* 
+  TODO:
+  Add Preloader
+  Add Animation to cards on load
+  Add Animation for Dialog
+*/
+body {
+  background-color: var(--app-color-dark-bg);
+}
+
+dialog[open] {
+  height: fit-content;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+dialog[open] h3 {
+  font-family: "Almendra SC", serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+dialog[open] p {
+  font-size: 18px;
+  text-indent: 20px;
+}
+
+dialog[open] .close {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #ebebeb;
+  align-self: center;
+  transition: all 0.25s ease-in-out 
+}
+
+dialog[open] .close:hover {
+  background-color: #ffdead;
+}
+
+main, .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.spell-list-wrapper select {
+  font-family: "Almendra SC", serif;
+  padding: 0px 10px;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+  appearance: none;
+  background: #fff url(../img/arrow.png) no-repeat right 10px top 50%;
+  background-size: 15px;
+  cursor: pointer;
+}
+
+.spell-list-wrapper select:focus {
+  background: #fff url(../img/arrow-up.png) no-repeat right 10px top 50%;
+}
+
+.spell-book {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  font-size: 14px;
+  color: #000;
+  width: calc(25% - 15px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  background: #ffdead url(../img/card-bg.jpg) no-repeat center center;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card > h3 {
+  font-family: "Almendra SC", serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.card > p:first-of-type {
+  font-family: "Almendra SC", serif;
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card h5 {
+  font-family: "Almendra SC", serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.ritual-tag {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 18px;
+}
+
+.quick-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+
+.info-box {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 50%;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.range-area {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.info-text {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.description button {
+  font-family: "Almendra SC", serif;
+  letter-spacing: 0.75px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 40%);
+  transition: all 0.25s ease-in-out;
+}
+
+.description button:hover {
+  background-color: #ffdead;
+  box-shadow: none;
+}
+
+.delete {
+  width: fit-content;
+  align-self: flex-end;
+  font-size: 18px;
+  color: red;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.delete:hover {
+  scale: 1.1;
+}
+
+.back-wrap {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.back {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.25s ease-in-out;
+}
+
+.back:hover {
+  background-color: #ffdead;
+}
