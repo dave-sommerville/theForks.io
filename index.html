@@ -6,9 +6,10 @@
   <meta name="author" content="Dave Sommerville">
   <meta name="description" content="Dave Sommerville">
   <meta name="theme-color" content="#ffffff">
+
   <meta property="og:title" content="DS Code | Dave Sommerville" />
   <meta property="og:description" content="Dave Sommerville | Fullstack Web Developer Actively seeking full-time opportunities in Winnipeg, Canada - building fast, accessible, and modern websites. Focused on creating scalable, maintainable, and versatile code." />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="https://www.theforks.io//src/media/theforks-io-logo.jpg" />
   <meta property="og:url" content="https://theforks.io" />
   <meta property="og:type" content="website" />
     <title>theForks.io | Public Winnipeg GitHub Repository for Programmers of All Levels</title>
@@ -26,7 +27,10 @@
 <body>
     <main>
       <section class="container f-col">
-        <img alt="theForks.io" src="./src/media/theforks-io-logo.jpg" class="logo">
+        <div class="logo">
+
+          <img alt="theForks.io" src="./src/media/theforks-no-bg-logo.png">
+        </div>
         <h1>theForks.io</h1>
         <h2>Winnipeg's Open-Source Repository</h2>
       </section>
@@ -63,7 +67,7 @@
           The Forks historical site embodies a spirit of teamwork and communication.
         </p>
         <p> 
-          TheForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects.           
+          theForks.io is for Manitoban programmers, developers, and designers to share, discover, and discuss local open-source programs and projects.           
         </p>
       </div>
       <img src="./src/media/pete-mcbride-4ma1B4OdCpM-unsplash.jpg" class="outdoor-pic">
@@ -75,7 +79,7 @@
         </p>
       </a>
     </section>
-    <article class="container">
+    <article class="container flex">
       <div class="display-text">
         <h3>Why Contribute?</h3>
         <ul>
@@ -84,120 +88,77 @@
           <li>Networking</li>
         </ul>
       </div>
-      <section class="btn-container">
-        <div class="btn contributors-btn">
-          <i class="fa-solid fa-users-rays"></i>
+      <p >
+        <a 
+          href="https://github.com/dave-sommerville/theForks.io" 
+          target="_blank"
+          class="link"
+        >
+          Visit the Repository here
+        </a>
+      </p>
+    </article>
+    <section class="contributors">
+      <h4>Contributors and Projects</h4>
+      <div class="list-container">
+        <ul>
+          <li class="bold">Name</li>
+          <li>Dave Sommerville</li>
+          
+        </ul>
+        <ul>
+          <li class="bold">Website</li>
+          <li>
+            <a href="https://ds-code.ca" target="_blank">DS Code</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="bold">Project Name</li>
+          <li>Blackjack</li>
+        </ul>
+        <ul>
+          <li class="bold">Links</li>
+          <li>
+            <a href="https://dave-sommerville.github.io/blackjack/" target="_blank">Website</a> | <a href="https://github.com/dave-sommerville/blackjack" target="_blank">Repository</a>
+          </li>
+        </ul>          
+      </div>
+    </section>
+    <h4>Documentation</h4>
+    <section class="btn-container">
+        <a href="./README.md" class="btn" target="_blank">
+          <i class="fa-solid fa-book"></i>
           <p>
-            Contributors
-          </p>
-        </div>
-        <div class="btn projects-btn">
-          <i class="fa-solid fa-diagram-project"></i>
+            README
+          </p>  
+        </a>
+        <a href="./How_to_Contribute.md" class="btn" target="_blank">
+          <i class="fa-solid fa-book"></i>
           <p>
-            Projects
+            How to Contribute
           </p>
-        </div>
-        <div class="btn workshop-btn">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </a>
+        <a href="./Code_of_Conduct.md" class="btn" target="_blank">
+          <i class="fa-solid fa-book"></i>
           <p>
-            Workshop
+            Code of Conduct
           </p>
-        </div>
-        <div class="btn documention-btn">
-          <i class="fa-solid fa-folder-open"></i>
+        </a>
+        <a href="./README_Template.md" class="btn" target="_blank">
+          <i class="fa-solid fa-book"></i>
           <p>
-            Documentation
+    
+            README template
           </p>
+        </a>
+        <div class="btn tutorial-btn">
+          <i class="fa-brands fa-square-youtube"></i>
+          <p>Tutorial</p>
         </div>
       </section>
-    </article>
-    <section class="f-col">
-      <p class="link">
-        <a href="https://github.com/dave-sommerville/theForks.io" target="_blank">Visit the Repository here</a>
-      </p>
-      <p class="mb-50px">
-        This is a ground level project. Where this space goes and how it evolves will be up to the community. Have any ideas on how to use this space? Want to do more than just contribute? 
-      </p>
-      <a href="mailto:dave.r.sommerville@outlook.com" class="link">Send me a message</a>
-      <p>Or visit</p>
-      <a href="https://ds-code.ca" target="_blank" class="ds-code">
-      </a>
-    </section>
-      <dialog class="contributors">
-        <div class="close-btn">X</div>
-        <h4>Contributors</h4>
-        <div class="list-container">
-          <ul>
-            <li class="bold">Name</li>
-            <li>Dave Sommerville</li>
-          </ul>
-          <ul>
-            <li class="bold">Website</li>
-            <li>
-              <a href="https://ds-code.ca" target="_blank">DS Code</a>
-            </li>
-          </ul>
-        </div>
-      </dialog>
-      <dialog class="projects">
-        <div class="close-btn">X</div>
-        <h4>Projects</h4>
-        <div class="list-container">
-          <ul>
-            <li class="bold">Project Name</li>
-            <li>Blackjack</li>
-          </ul>
-          <ul>
-             <li class="bold">Links</li>
-            <li>
-              <a href="https://dave-sommerville.github.io/blackjack/" target="_blank">Website</a> | <a href="https://github.com/dave-sommerville/blackjack" target="_blank">Repository</a>
-            </li>
-          </ul>
-        </div>
-      </dialog>
-      <dialog class="workshop">
-        <div class="close-btn">X</div>
-        <H4>Workshop</H4>
-        <p>Coming Soon</p>
-      </dialog>
-      <dialog class="documentation">
-        <div class="close-btn">X</div>
-        <h4>Documentation</h4>
-        <div class="btn-container">
-          <a href="./README.md" class="btn" target="_blank">
-            <i class="fa-solid fa-book"></i>
-            <p>
-              README
-            </p>  
-          </a>
-          <a href="./How_to_Contribute.md" class="btn" target="_blank">
-            <i class="fa-solid fa-book"></i>
-            <p>
-              How to Contribute
-            </p>
-          </a>
-          <a href="./Code_of_Conduct.md" class="btn" target="_blank">
-            <i class="fa-solid fa-book"></i>
-            <p>
-              Code of Conduct
-            </p>
-          </a>
-          <a href="./README_Template.md" class="btn" target="_blank">
-            <i class="fa-solid fa-book"></i>
-            <p>
-
-              README template
-            </p>
-          </a>
-          <div class="btn tutorial-btn">
-            <i class="fa-brands fa-square-youtube"></i>
-            <p>Tutorial</p>
-          </div>
-        </div>
-      </dialog>
       <dialog class="tutorial">
         <div class="close-btn">X</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ygqx50-JHEE?si=X_7Yo2Jo2cUm9sGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ygqx50-JHEE?si=X_7Yo2Jo2cUm9sGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </dialog>
     </main>
     <footer class="container">
@@ -224,13 +185,13 @@
             href="https://unsplash.com/photos/a-very-tall-bridge-with-a-very-tall-building-in-the-background-1ci4qIfZ1Yo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
             target="_blank"
           >
-            Bridge -Amanpreet Deol
+            Bridge-Amanpreet Deol,
           </a> 
           <a 
             href="https://unsplash.com/photos/brown-and-gray-building-near-trees-during-daytime-4ma1B4OdCpM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
             target="_blank"
           >
-            Winter: Pete McBride
+            Winter-Pete McBride
           </a>
         </li>
       </ul>
