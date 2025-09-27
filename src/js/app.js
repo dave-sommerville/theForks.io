@@ -19,44 +19,47 @@ function addClass(element, customClass) {
 
 const modal = select('.card-container');
 
-const whyContribute = select('.why-contribute');
-const contributors = select('.contributors');
-const projects = select('.projects');
-const workshop = select('.workshop');
-const documention = select('.documentation');
 const tutorial = select('.tutorial');
-
-const contributorsButton = select('.contributors-btn');
-const projectsButton = select('.projects-btn');
-const workshopButton = select('.workshop-btn');
-const documentionButton = select('.documention-btn');
+const introVideo = select('.intro-video');
 const tutorialButton = select('.tutorial-btn');
-
+const introVideoButton = select('.intro-video-btn');
 const exitButtons = selectAll('.close-btn');
 
+const heroBanner = select("header");
+const headerSwitch = heroBanner.offsetHeight;
 
-listen("click", contributorsButton, ()=> {
-  contributors.showModal();
+/*----------------------------------------------------------->
+	Parallax Controls 
+<----------------------------------------------------------*/
+
+const parallaxLayers = [
+  {selector: ".parallax.one", speed: 0.9},
+  {selector: ".parallax.two", speed: 1},
+  {selector: ".parallax.three", speed: 0.3},
+  {selector: ".parallax.four", speed: 0.5},
+  {selector: ".parallax.five", speed: 2},
+  {selector: ".parallax.six", speed: -0.8},
+  {selector: ".parallax.seven", speed: 1.6}
+];
+
+listen("scroll", window, () => {
+  const scrollTop = window.pageYOffset;
+  parallaxLayers.forEach(({selector, speed}) => {
+    const layer = select(selector);
+    const yPos = -(scrollTop * speed);
+    layer.style.transform = `translateY(${yPos}px)`;
+  });
 });
-listen("click", projectsButton, ()=> {
-  projects.showModal();
-});
-listen("click", workshopButton, ()=> {
-  workshop.showModal();
-});
-listen("click", documentionButton, ()=> {
-  documention.showModal();
-});
+
+
+
+
 listen("click", tutorialButton, ()=>{
   tutorial.showModal();
 });
 
 exitButtons.forEach(btn => {
   listen("click", btn, ()=> {
-    contributors.close();
-    projects.close();
-    workshop.close();
-    documention.close();
     tutorial.close();
   });
 });
