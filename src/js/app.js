@@ -22,7 +22,7 @@ const modal = select('.card-container');
 const tutorial = select('.tutorial');
 const introVideo = select('.intro-video');
 const tutorialButton = select('.tutorial-btn');
-const introVideoButton = select('.intro-video-btn');
+const introVideoButton = select('.intro-btn');
 const exitButtons = selectAll('.close-btn');
 
 const heroBanner = select("header");
@@ -57,7 +57,9 @@ listen("scroll", window, () => {
 listen("click", tutorialButton, ()=>{
   tutorial.showModal();
 });
-
+listen("click", introVideoButton, ()=> {
+  introVideo.classList.toggle('open');
+});
 exitButtons.forEach(btn => {
   listen("click", btn, ()=> {
     tutorial.close();

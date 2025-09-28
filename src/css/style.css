@@ -4,13 +4,19 @@
   --clr-drk: #1b6582;
   --clr-primary: #A5F0D5;
   --clr-accent: #f1a87b;
+  --clr-blur-bg: #A5F0D544;
   --font-size-title: 2.4rem;
   --font-size-subtitle: 2rem;
   --font-size-reg: 1.6rem;
   --font-size-small: 1.2rem;
+  --app-transition: all 0.3s ease-in-out;
+  --app-border-rad: 10px;
+  --app-shadow: 9px 9px 18px rgba(0, 0, 0, 0.45);
+  --app-blur: 10px;
 }
 @media(orientation: portrait) {
   :root {
+    --font-size-title: 1.8rem;
     --font-size-subtitle: 1.6rem;
     --font-size-reg: 1.2rem;
     --font-size-small: 1rem;
@@ -18,6 +24,9 @@
 }
 body {
   background-color: var(--clr-bg);
+}
+code {
+  font-size: var(--font-size-small);
 }
 ul {
   list-style-type: none;
@@ -158,6 +167,12 @@ p {
 .gp-25px {
   gap: 25px;
 }
+.gp-5px {
+
+}
+.mb-5px {
+  margin-bottom: 5px;
+}
 .mb-25px {
   margin-bottom: 25px;
 }
@@ -167,22 +182,50 @@ p {
 .w-100 {
   width: 100%;
 }
+.w-100px { 
+  max-width: 100px;
+}
+.w-200px {
+  max-width: 200px;
+}
+.w-400px {
+  max-width: 400px;
+}
 .sp-vn {
   justify-content: space-evenly;
 }
-.body-card.image p {
-  padding: 25px;
+.cen {
+  justify-content: center;
+  align-items: center;
+}
+.hover {
+  transition: var(--app-transition);
+}
+.hover:hover {
+  filter: brightness(1.2)
+}
+.pointer {
+  cursor: pointer;
+}
+.image-card {
   max-width: 400px;
-  font-size: var(--font-size-small);
   margin: 0 auto;
+  margin-bottom: 25px;
+  background-color: var(--clr-blur-bg);
+  backdrop-filter: blur(var(--app-blur));
+  border-radius: var(--app-border-rad);
+  box-shadow: var(--app-shadow);
+}
+.image-card p {
+  font-size: var(--font-size-small);
 }
 .hero-card {
   max-width: 700px;
   text-wrap: wrap;
   border-radius: 6px;
   padding: 25px;
-  background-color: #A5F0D544;
-  backdrop-filter: blur(10px);
+  background-color: var(--clr-blur-bg);
+  backdrop-filter: blur(var(--app-blur));
   position: relative;
   z-index: 5000;
   h2 {
@@ -193,24 +236,29 @@ p {
     margin-top: -50px;
   }
 }
-.logo {
 
-}
-
-.list-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  gap: 10px;
-}
 .small-title {
-  background-color: var(--clr-accent);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#1b6582;
   color: #012;
-  padding: 0 10px;
-  border-radius: 6px;
+  border-radius: var(--app-border-rad);
+  box-shadow: var(--app-shadow);
 }
 .icon-btn{
   max-width: 100px;
+  transition: var(--app-transition);
+}
+.icon-btn:hover {
+  filter: brightness(1.2);
+}
+.small-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 .profile-icon {
   max-width: 60px;
@@ -229,51 +277,33 @@ p {
   font-size: var(--font-size-small);
   background-color: #A5F0D544;
   backdrop-filter: blur(10px);
-}
-.banner {
-  height: 35svh;
-  width: 100%;
-  background: #1b6582 url('../media/amanpreet-deol-1ci4qIfZ1Yo-unsplash.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.banner p {
   border-radius: 6px;
-  max-width: 500px;
-  background-color: #f7dadac5;
-  backdrop-filter: blur(2px);
+  margin-bottom: 25px;
 }
+
 .outdoor-pic {
   max-width: 400px;
   border-radius: 6px;
 }
-.btn-container {
-  max-width: 500px;
-  min-height: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 .btn {
-  min-width: 200px;
-  max-height: 50px;
+  width: 180px;
+  height: 60px;
   display: flex;
-  justify-content: space-between;
+  margin: 10px auto;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--clr-primary);
-  border-radius: 6px;
+  background-color: #012;
+  color: var(--clr-accent);
+  font-size: var(--font-size-small);
+  font-family: 'Kode Mono';
+  border-radius: var(--app-border-rad);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: var(--app-transition);
 }
 .btn:hover {
-  background-color: #012;
-  color: var(--clr-primary);
-
+  color: #fefefe;
+  filter: brightness(2);
 }
 .btn i {
   font-size: var(--font-size-small);
@@ -283,16 +313,7 @@ p {
   font-size: var(--font-size-small);
 }
 
-/* .video-container {
-  position: relative;
-  width: 80%;
-  max-width: 360px;
-  aspect-ratio: 4 / 5; 
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
-  overflow: hidden;
-} */
-
+/* 
 .promo-iframe {
   position: absolute;
   top: 0;
@@ -300,6 +321,18 @@ p {
   width: 100%;
   height: 100%;
   border: 0;
+} */
+
+.promo-iframe {
+  height: 400px;
+  width: 300px;
+}
+.body-card .btn {
+  min-width: min(500px, 60svw);
+  justify-content: left;
+}
+.body-card .btn i {
+  margin: 0 25px;
 }
 article {
   max-width: 800px;
@@ -312,12 +345,14 @@ article {
 .body-card {
   margin-bottom: 50px;
   background-color: #1b6582;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
+  box-shadow: var(--app-shadow);
+  border-radius: var(--app-border-rad);
   padding: 25px;
 }
-.body-card.image {
-  padding: 0;
+
+.body-card.clear {
+  background-color: var(--clr-blur-bg);
+  backdrop-filter: blur(var(--app-blur));
 }
 .ds-code {
   height: 80px;
@@ -334,6 +369,22 @@ article {
   align-items: center;
   margin-bottom: 50px
 }
+.intro-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.intro-video {
+  height: 0;
+  overflow: hidden;
+  transition: var(--app-transition);
+}
+.intro-video.open {
+  height: 425px;
+}
 
 dialog {
   min-width: 40svw;
@@ -343,8 +394,17 @@ dialog {
   padding: 20px;
   position: fixed;
   margin: auto;
+  background-color: #1b6582;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   animation: fadeIn 0.3s ease;
+}
+dialog ul {
+  list-style-type: none;
+  text-align: left;
+}
+dialog img {
+  border-radius: 10px;
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
@@ -367,13 +427,12 @@ dialog::backdrop {
 }
 footer {
   font-family: "Space Mono","IBM Plex Mono", monospace;
-  padding: 10px 0;
-}
-footer ul {
-  width: 100%;
+  background-color: #1b6582;
+  font-size: var(--font-size-small);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -387,7 +446,13 @@ footer ul {
 }
 
 @media(orientation: portrait) {
-  .logo {
+  .logo, dialog {
     width: 90svw;
+  }
+  .media-flip {
+    flex-direction: column;
+  }
+  .hero-card h2 {
+    margin-top: -25px;
   }
 }
