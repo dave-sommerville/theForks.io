@@ -395,7 +395,6 @@ dialog {
   position: fixed;
   margin: auto;
   background-color: #1b6582;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   animation: fadeIn 0.3s ease;
 }
