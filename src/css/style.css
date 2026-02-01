@@ -75,7 +75,7 @@ header {
   right: 100px;
   width: 300px;
   height: 300px;
-  background-image: url("../media/git-two.png");
+  background-image: url("../media/git-reverse.png");
 }
 .parallax.three {
   z-index: 300;
@@ -91,7 +91,7 @@ header {
   right: 600px;
   width: 200px;
   height: 200px;
-  background-image: url("../media/git-two.png");
+  background-image: url("../media/git-reverse.png");
 }
 .parallax.five {
   z-index: 500;
@@ -107,7 +107,7 @@ header {
   right: 350px;
   width: 200px;
   height: 200px;
-  background-image: url("../media/git-two.png");
+  background-image: url("../media/git-reverse.png");
 }
 .parallax.seven {
   z-index: 700;
@@ -196,6 +196,10 @@ p {
 }
 .sp-vn {
   justify-content: space-evenly;
+}
+.center {
+  justify-content:center;
+  align-items: center;
 }
 .cen {
   justify-content: center;
@@ -356,13 +360,7 @@ article {
   background-color: var(--clr-blur-bg);
   backdrop-filter: blur(var(--app-blur));
 }
-.ds-code {
-  height: 80px;
-  width: 300px;
-  background: var(--clr-bg) url("https://ds-code.ca/image/site-preview.png") no-repeat center center;
-  background-size: 150%;
-  border-radius: 6px;
-}
+
 .contributors {
   width: 100%;
   display: flex;
@@ -429,11 +427,14 @@ dialog::backdrop {
 footer {
   font-family: "Space Mono","IBM Plex Mono", monospace;
   background-color: #1b6582;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-title);
   display: flex;
   justify-content: space-evenly;
+  padding: 20px 0;
 }
-
+.ds-code {
+  height: 30px;
+}
 
 @keyframes fadeIn {
   from {
