@@ -52,16 +52,3 @@ listen("scroll", window, () => {
 });
 
 
-
-
-listen("click", tutorialButton, ()=>{
-  tutorial.showModal();
-});
-listen("click", introVideoButton, ()=> {
-  introVideo.classList.toggle('open');
-});
-exitButtons.forEach(btn => {
-  listen("click", btn, ()=> {
-    tutorial.close();
-  });
-});
