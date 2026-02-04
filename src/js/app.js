@@ -19,13 +19,7 @@ function addClass(element, customClass) {
 
 const modal = select('.card-container');
 
-const tutorial = select('.tutorial');
-const introVideo = select('.intro-video');
-const tutorialButton = select('.tutorial-btn');
-const introVideoButton = select('.intro-btn');
-const exitButtons = selectAll('.close-btn');
-
-const heroBanner = select("header");
+const heroBanner = select("#page-top");
 const headerSwitch = heroBanner.offsetHeight;
 
 /*----------------------------------------------------------->
