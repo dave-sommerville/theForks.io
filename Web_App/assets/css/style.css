@@ -79,8 +79,8 @@ ul {
 
 .parallax.one {
   z-index: 100;
-  top: 200px;
-  left: 50px;
+  top: 20px;
+  left: 5svw;
   width: 200px;
   height: 200px;
   filter: opacity(0.7);
@@ -89,16 +89,16 @@ ul {
 
 .parallax.two {
   z-index: 200;
-  top: 1200px;
-  right: 100px;
+  top: 20px;
+  right: 15svw;
   width: 300px;
   height: 300px;
   background-image: url("../img/git-logo-reverse.png");
 }
 .parallax.three {
   z-index: 300;
-  top: 800px;
-  right: 500px;
+  top: 100px;
+  right: 40svw;
   width: 100px;
   height: 100px;
   background-image: url("../img/git-logo.png");
@@ -106,31 +106,31 @@ ul {
 .parallax.four {
   z-index: 400;
   top: 300px;
-  right: 600px;
+  right: 50svw;
   width: 200px;
   height: 200px;
   background-image: url("../img/git-logo-reverse.png");
 }
 .parallax.five {
   z-index: 500;
-  top: 800px;
-  left: 300px;
+  top: 350px;
+  left: 70svw;
   width: 250px;
   height: 250px;
   background-image: url("../img/git-logo.png");
 }
 .parallax.six {
   z-index: 600;
-  top: 700px;
-  right: 350px;
+  top: 140px;
+  right: 90svw;
   width: 200px;
   height: 200px;
   background-image: url("../img/git-logo-reverse.png");
 }
 .parallax.seven {
   z-index: 700;
-  top: 1000px;
-  right: 15svw;
+  top: 800px;
+  right: 25svw;
   width: 400px;
   height: 400px;
   filter: blur(5px) opacity(0.9) brightness(1.5);
@@ -204,10 +204,11 @@ p {
   max-width: 100px;
 }
 .w-200px {
-  max-width: 200px;
+  width: 200px;
 }
 .w-400px {
   max-width: 400px;
+  min-width: 340px;
 }
 .sp-vn {
   justify-content: space-evenly;
@@ -221,6 +222,9 @@ p {
 }
 .cen {
   justify-content: center;
+  align-items: center;
+}
+.h-cen {
   align-items: center;
 }
 .hover {
@@ -301,16 +305,15 @@ p {
   border-radius: 6px;
 }
 .btn {
-  width: 180px;
-  height: 60px;
+  height: 30px;
+  width: 30px;
   display: flex;
-  margin: 10px auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #012;
   color: var(--clr-accent);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-reg);
   font-family: 'Kode Mono';
   border-radius: var(--app-border-rad);
   cursor: pointer;
@@ -320,13 +323,8 @@ p {
   color: #fefefe;
   filter: brightness(2);
 }
-.btn i {
-  font-size: var(--font-size-small);
-  margin-bottom: 5px;
-}
-.btn p {
-  font-size: var(--font-size-small);
-}
+
+
 
 /* 
 .promo-iframe {
