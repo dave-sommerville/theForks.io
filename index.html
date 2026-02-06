@@ -21,10 +21,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="./Web_App/assets/css/style.css" media="all">
   <link rel="stylesheet" href="./Web_App/assets/css/reset.css" media="all">
-  <script src="./Web_App/assets/js/app.js" defer></script>
 </head>
-<body class="container">
-  <header id="page-top">
+<body>
+  <header class="container" id="page-top">
     <img src="./Web_App/assets/img/pete-mcbride-4ma1B4OdCpM-unsplash.jpg" class="hero-banner">
     <h1 hidden="true">theForks.io</h1>
     <div class="hero-card">
@@ -39,7 +38,8 @@
     <div class="parallax six"></div>
     <div class="parallax seven"></div>
   </header>
-  <main class="article"> >
+  <main>
+    <div class="container main-content">
       <div>
         <p>
           Winnipeg is home to a robust tech scene that is beginning to evolve in new and exciting ways. Centered around a public 
@@ -58,31 +58,35 @@
           target="_blank"
           class="mlr-5px cen f-col"
           >
-            <img src="./Web_App/assets/img/github.png" class="icon-btn mb-5px">
-            <p class="icon-text">Check out the repo</p>
-          </a>
-      </div>
-      <div class="f-col pointer">
-        <a 
-          href="https://www.linkedin.com/groups/14952094/" 
-          target="_blank"
-          class="cen mlr-5px f-col"
-        >
-          <img src="./Web_App/assets/img/linkedin.png" class="icon-btn mb-5px">
-          <p class="icon-text">Join the LinkedIn</p>
+          <img src="./Web_App/assets/img/github.png" class="icon-btn mb-5px">
+          <p class="icon-text">Check out the repo</p>
         </a>
       </div>
       <div class="f-col pointer">
         <a 
-          href="https://discord.gg/UHeWdDTkFE" 
-          target="_blank"
-          class="mnlr-5px cen f-col"
+        href="https://www.linkedin.com/groups/14952094/" 
+        target="_blank"
+        class="cen mlr-5px f-col"
         >
-          <img src="./Web_App/assets/img/discord.png" class="icon-btn mb-5px">
-          <p class="icon-text">Join the Discord</p>
-        </a>
+        <img src="./Web_App/assets/img/linkedin.png" class="icon-btn mb-5px">
+        <p class="icon-text">Join the LinkedIn</p>
+      </a>
       </div>
+      <div class="f-col pointer">
+        <a 
+        href="https://discord.gg/UHeWdDTkFE" 
+        target="_blank"
+        class="mnlr-5px cen f-col"
+        >
+        <img src="./Web_App/assets/img/discord.png" class="icon-btn mb-5px">
+        <p class="icon-text">Join the Discord</p>
+      </a>
     </div>
+    </div>
+    </div>
+    <p>
+      Reach out to me personally at <a href="mailto:dave.r.sommerville@outlook.com">dave.r.sommerville@outlook.com</a>
+    </p>
     <div class="mb-25px">
       <p>
         The Forks historical site embodies a spirit of teamwork and communication.
@@ -132,3 +136,35 @@
   </footer>
 </body>
 </html>
+<script>
+  function select(selector, scope = document) {
+    return scope.querySelector(selector);
+  }
+  function listen(event, element, callback) {
+    return element.addEventListener(event, callback);
+  }
+  const modal = select('.card-container');
+
+  const heroBanner = select("#page-top");
+  const headerSwitch = heroBanner.offsetHeight;
+
+  const parallaxLayers = [
+    {selector: ".parallax.one", speed: 0.9},
+    {selector: ".parallax.two", speed: 1},
+    {selector: ".parallax.three", speed: 0.3},
+    {selector: ".parallax.four", speed: 0.5},
+    {selector: ".parallax.five", speed: 2},
+    {selector: ".parallax.six", speed: -0.8},
+    {selector: ".parallax.seven", speed: 1.6}
+  ];
+
+  listen("scroll", window, () => {
+    const scrollTop = window.pageYOffset;
+    parallaxLayers.forEach(({selector, speed}) => {
+      const layer = select(selector);
+      const yPos = -(scrollTop * speed);
+      layer.style.transform = `translateY(${yPos}px)`;
+    });
+  });
+
+</script>

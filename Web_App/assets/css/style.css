@@ -7,7 +7,7 @@
   --clr-secondary-bg: #27375c;
   --clr-blur-bg: #A5F0D544;
   --font-size-title: 32px;
-  --font-size-subtitle: 2px;
+  --font-size-subtitle: 20px;
   --font-size-reg: 16px;
   --font-size-small: 10px;
   --app-transition: all 0.3s ease-in-out;
@@ -154,13 +154,11 @@ h1 {
   display: none;
 }
 
-h4 {
+h4, h5 {
   font-size: var(--font-size-reg);
-  margin: 10px 0;
+  margin: 0;
 }
-h5 {
-  font-size: var(--font-size-small);
-}
+
 p {
   font-size: var(--font-size-reg);
   max-width: 800px;
@@ -261,7 +259,9 @@ p {
     text-align: center;
   }
 }
-
+.strong {
+  font-weight: 600;
+}
 
 .icon-btn{
   width: 70px;
@@ -350,7 +350,7 @@ p {
 .body-card .btn i {
   margin: 0 25px;
 }
-.article {
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,6 +370,43 @@ p {
   background-color: var(--clr-blur-bg);
   backdrop-filter: blur(var(--app-blur));
 }
+/* summary {
+  list-style: none; /* Hides the default arrow in most browsers 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: var(--font-size-subtitle);
+} */
+
+/* Specific fix for Safari/Chrome
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: '';
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('../img/greater-than.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the custom image when open */
+/* details[open] summary::before {
+  transform: rotate(90deg); 
+} */ 
+details .content {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out; /* Match this time to your JS setTimeout */
+  height: 0; 
+}
+
+/* Remove or comment out any 'details[open] .content' rules that 
+   might be forcing height: auto instantly, as that overrides the animation. */
+
 
 .contributors {
   width: 100%;

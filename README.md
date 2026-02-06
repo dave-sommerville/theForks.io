@@ -12,7 +12,7 @@ Whether you’ve built a handy CLI tool, a small web app, or just a fun experime
 
 ## Specifics
 
-My name is [Dave Sommerville](https://ds-code.ca) and I'm a recent graduate from [MITT](https://mitt.ca). I'm currently the sole moderator for this repo, but I want to change that. Once I get things established, I will share permissions with a select group of people to ensure integrity and longevity for the project. In the meantime, I will handle all contributions to the best of my ability. 
+My name is [Dave Sommerville](https://ds-code.ca) and currently employed as an Instructional Assistant at [MITT](https://mitt.ca). I'm currently the sole moderator for this repo, but I want to change that. Once I get things established, I will share permissions with a select group of people to ensure integrity and longevity for the project. In the meantime, I will handle all contributions to the best of my ability. 
 
 
 
