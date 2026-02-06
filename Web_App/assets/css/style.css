@@ -34,14 +34,16 @@ body {
 code {
   font-size: var(--font-size-small);
 }
-.contributors-header {
+.secondary-header {
   font-size: var(--font-size-title);
-  height: 100px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--clr-primary);
   font-family: "Kode Mono", "IBM Monoplex", monospace;
+  background: var(--clr-drk) url('../img/pete-mcbride-4ma1B4OdCpM-unsplash.jpg') no-repeat center center;
+  background-size: cover;
 }
 ul {
   list-style-type: none;
@@ -136,13 +138,11 @@ ul {
 }
 
 main{
-  min-height: 100svh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   font-family: "Space Mono","IBM Plex Mono", monospace;
   padding: 100px 0;
   background-color: var(--clr-drk);
@@ -214,6 +214,9 @@ p {
 .sp-vn {
   justify-content: space-evenly;
 }
+.sp-between {
+  justify-content: space-between;
+}
 .center {
   justify-content:center;
   align-items: center;
@@ -281,9 +284,7 @@ p {
   overflow: hidden;
   border-radius: 50%;
 }
-.project-description {
-  font-size: var(--font-size-small);
-}
+
 .profile-icon img {
   max-width: 60px;
 }
@@ -356,6 +357,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 5000;
+  text-align: center;
 }
 
 .body-card {
@@ -364,21 +366,26 @@ p {
   box-shadow: var(--app-shadow);
   border-radius: var(--app-border-rad);
   padding: 25px;
+  max-width: 600px;
+  font-size: var(--font-size-reg);
+  h4 {
+    font-size: var(--font-size-subtitle);
+  }
 }
 
 .body-card.clear {
   background-color: var(--clr-blur-bg);
   backdrop-filter: blur(var(--app-blur));
 }
-/* summary {
-  list-style: none; /* Hides the default arrow in most browsers 
+summary {
+  list-style: none; /* Hides the default arrow in most browsers */
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: var(--font-size-subtitle);
-} */
+}
 
-/* Specific fix for Safari/Chrome
+/* Specific fix for Safari/Chrome */
 summary::-webkit-details-marker {
   display: none;
 }
@@ -395,17 +402,15 @@ summary::before {
 }
 
 /* Rotate the custom image when open */
-/* details[open] summary::before {
+details[open] summary::before {
   transform: rotate(90deg); 
-} */ 
+}
 details .content {
   overflow: hidden;
   transition: height 0.3s ease-in-out; /* Match this time to your JS setTimeout */
   height: 0; 
 }
 
-/* Remove or comment out any 'details[open] .content' rules that 
-   might be forcing height: auto instantly, as that overrides the animation. */
 
 
 .contributors {
