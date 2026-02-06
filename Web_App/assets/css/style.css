@@ -150,9 +150,7 @@ main{
   z-index: 1000;
   color: var(--clr-primary);
 }
-h1 {
-  display: none;
-}
+
 
 h4, h5 {
   font-size: var(--font-size-reg);
