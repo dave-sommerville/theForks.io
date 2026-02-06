@@ -136,6 +136,11 @@ ul {
   filter: blur(5px) opacity(0.9) brightness(1.5);
   background-image: url("../img/git-logo.png");
 }
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
 
 main{
   width: 100%;
