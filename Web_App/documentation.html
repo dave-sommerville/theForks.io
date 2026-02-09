@@ -6,34 +6,35 @@
   <meta name="author" content="Dave Sommerville">
   <meta name="description" content="Dave Sommerville">
   <meta name="theme-color" content="#ffffff">
-
   <meta property="og:title" content="theForks.io | Winnipeg Open Source GitHub Repository" />
   <meta property="og:description" content="Community driven GitHub repository for local developers, programmers, and tech enthusiasts" />
   <meta property="og:image" content="https://www.theforks.io//assets/img/theforks-io-logo.jpg" />
   <meta property="og:url" content="https://theforks.io" />
   <meta property="og:type" content="website" />
-    <title>theForks.io | Public Winnipeg GitHub Repository for Programmers of All Levels</title>
-    <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
-    
-    <!-- External stylesheets -->
+  <title>theForks.io | Public Winnipeg GitHub Repository for Programmers of All Levels</title>
+  <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
+  <!-- External stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kode+Mono:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" media="all">
-    <link rel="stylesheet" href="./assets/css/reset.css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kode+Mono:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" media="all">
+  <link rel="stylesheet" href="./assets/css/reset.css" media="all">
 </head>
 <body>
   <header class="secondary-header">
+    <a href="../index.html">
+      <img src="./assets/img/theforks-logo.svg">
+    </a>
     <h3>Documentation</h3>
   </header>
-  <main>
+  <main class="doc-main">
     <section class="w-100 mb-50px">
       <details class="f-col cen">
         <summary>
             README
         </summary>
-        <div class="content">
+        <div class="content ">
           <h2 class="mb-5px">theForks.io</h2>
           <h3>Winnipeg Open Source Showcase</h3>
           <p class="mb-5px">Hello Winnipeg!</p>
@@ -100,17 +101,28 @@
             <p>Commit your changes to your fork.</p>
             <p class="mb-5px"><span class="bold">Open a Pull Request</span> to the <code>main</code> branch of this repo.</p>
             
-            <p>Your project will be reviewed and merged for everyone to see!</p>
-            <a 
-            href="https://github.com/dave-sommerville/theForks.io" 
-            target="_blank"
-            class="mb-5px"
-            >
-            <img src="./assets/img/github.png" class="small-icon">
-          </a>
-          <a href="https://youtu.be/ygqx50-JHEE?si=2gEMJ3adT5AOI3dx" target="_blank">
-            <img src="./assets/img/youtube.png" class="small-icon">
-          </a>
+            <p class="mb-25px">Your project will be reviewed and merged for everyone to see!</p>
+            <div class="flex w-100 sp-vn mb-25px">
+              <div class="f-col pointer">
+                <a 
+                  href="https://github.com/dave-sommerville/theForks.io" 
+                  target="_blank"
+                  class="mlr-5px cen f-col"
+                >
+                  <img src="./assets/img/github.png" class="small icon-btn mb-5px">
+                  <p class="icon-text">Visit the Repo</p>
+                </a>
+              </div>
+                  <div class="f-col pointer">
+                <a 
+                  href="https://youtu.be/ygqx50-JHEE?si=2gEMJ3adT5AOI3dx" 
+                  target="_blank"
+                  class="mlr-5px cen f-col"
+                >
+                  <img src="./assets/img/youtube.png" class="small icon-btn mb-5px">
+                  <p class="icon-text">Git Tutorial Video</p>
+                </a>
+              </div>
         </div>
         </details>
         <details class="f-col cen">
@@ -118,7 +130,6 @@
             Code of Conduct
           </summary>
           <div class="content">
-
             <h3>Code of Conduct</h3>
             <p>We are committed to fostering a welcoming, inclusive, and respectful environment for everyone.</p>
             <ul>
@@ -134,7 +145,7 @@
           </div>
         </details>
       </section>
-      <div class="flex sp-between w-400px h-cen">
+      <div class="doc-link">
       <h4>
         <i class="fa-solid fa-book"></i>
         README template
