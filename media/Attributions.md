@@ -11,6 +11,13 @@
 * [YouTube icons](https://www.flaticon.com/free-icons/youtube) created by Rakib Hassan Rahim - Flaticon
 * [Arrows icons](https://www.flaticon.com/free-icons/arrows) created by Md Tanvirul Haque - Flaticon
 * [Manual icons](https://www.flaticon.com/free-icons/manual) created by juicy\_fish - Flaticon
+* [Ui icons](https://www.flaticon.com/free-icons/ui) created by Freepik - Flaticon
+* [Greater Than](https://www.flaticon.com/free-icons/greater-than) icons created by Md Tanvirul Haque - Flaticon
+* [Microsoft Icons](https://www.flaticon.com/free-icons/microsoft) created by Freepik - Flaticon
+
+
+
+
 
 ### Images
 
@@ -19,17 +26,13 @@
 
 
 
-<a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Freepik - Flaticon</a>
 
 
 
 
 
-<a href="https://www.flaticon.com/free-icons/greater-than" title="greater than icons">Greater than icons created by Md Tanvirul Haque - Flaticon</a>
 
 
-
-<a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Microsoft icons created by Freepik - Flaticon</a>
 
 
 
